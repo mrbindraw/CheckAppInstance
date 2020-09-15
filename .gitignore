@@ -1,0 +1,6 @@
+*.sln
+.vs
+Binaries
+Intermediate
+Saved
+Build
