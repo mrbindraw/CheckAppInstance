@@ -1,5 +1,5 @@
 # CheckAppInstance
-Plugin for UE4 project.  
+Plugin for UE4/5 project.  
 This plugin makes it possible only one instance of your game can be run at the same time.
 This plugin created mostly who don't like C++ and work only with blueprints.
 
