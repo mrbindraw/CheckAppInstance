@@ -1,4 +1,4 @@
-// Copyright 2020 Andrew Bindraw. All Rights Reserved.
+// Copyright 2024 Andrew Bindraw. All Rights Reserved.
 
 #include "CheckAppInstanceBPLibrary.h"
 #include "CheckAppInstance.h"
