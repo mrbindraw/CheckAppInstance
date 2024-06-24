@@ -4,8 +4,9 @@
 
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "HAL/FileManager.h"
-#include "Runtime/ApplicationCore/Public/Windows/WindowsPlatformApplicationMisc.h"
+#include "HAL/PlatformApplicationMisc.h"
 #include "GeneralProjectSettings.h"
+#include "Misc/CoreDelegates.h"
 #include "CheckAppInstanceBPLibrary.generated.h"
 
 UCLASS()

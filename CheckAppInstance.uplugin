@@ -19,7 +19,7 @@
 		{
 			"Name": "CheckAppInstance",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
+			"LoadingPhase": "EarliestPossible",
 			"WhitelistPlatforms": [
                 "Win64"
             ]
