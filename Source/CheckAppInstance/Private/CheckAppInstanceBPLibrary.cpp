@@ -12,6 +12,12 @@ UCheckAppInstanceBPLibrary::UCheckAppInstanceBPLibrary(const FObjectInitializer&
 void UCheckAppInstanceBPLibrary::CheckAnotherAppInstance(bool bIsEnabled)
 {
 #if !UE_EDITOR
+	FString ParseValue;
+	if (FParse::Value(FCommandLine::Get(), TEXT("-checkinst="), ParseValue))
+	{
+		bIsEnabled = ParseValue.ToBool();
+	}
+	
 	FCoreDelegates::OnAllModuleLoadingPhasesComplete.AddLambda([bIsEnabled]() 
 	{	
 		// Only one instance of the game can be initialized!

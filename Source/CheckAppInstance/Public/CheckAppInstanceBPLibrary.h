@@ -7,6 +7,7 @@
 #include "HAL/PlatformApplicationMisc.h"
 #include "GeneralProjectSettings.h"
 #include "Misc/CoreDelegates.h"
+#include "Misc/CommandLine.h"
 #include "CheckAppInstanceBPLibrary.generated.h"
 
 UCLASS()
