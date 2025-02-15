@@ -18,7 +18,12 @@
 		{
 			"Name": "CheckAppInstance",
 			"Type": "Runtime",
-			"LoadingPhase": "EarliestPossible"
+			"LoadingPhase": "EarliestPossible",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
 		}
 	]
 }
