@@ -1,4 +1,4 @@
-// Copyright 2024 Andrew Bindraw. All Rights Reserved.
+// Copyright 2025 Andrew Bindraw. All Rights Reserved.
 
 using UnrealBuildTool;
 
