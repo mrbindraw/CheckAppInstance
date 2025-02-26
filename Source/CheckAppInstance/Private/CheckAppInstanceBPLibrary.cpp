@@ -25,7 +25,7 @@ void UCheckAppInstanceBPLibrary::CheckAnotherAppInstance(bool bIsEnabled)
 		return;
 	}
 
-	FCoreDelegates::OnAllModuleLoadingPhasesComplete.AddLambda([bIsEnabled]() 
+	FCoreDelegates::OnAllModuleLoadingPhasesComplete.AddLambda([]() 
 	{	
 		// Only one instance of the game can be initialized!
 		const UGeneralProjectSettings& ProjectSettings = *GetDefault<UGeneralProjectSettings>();
