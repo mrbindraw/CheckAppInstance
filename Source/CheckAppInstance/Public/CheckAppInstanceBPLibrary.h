@@ -8,7 +8,17 @@
 #include "GeneralProjectSettings.h"
 #include "Misc/CoreDelegates.h"
 #include "Misc/CommandLine.h"
+
+#if PLATFORM_UNIX
+#include <unistd.h>		// close
+#include <fcntl.h>		// open
+#include <sys/file.h>	// flock
+#include <errno.h>
+#endif
+
 #include "CheckAppInstanceBPLibrary.generated.h"
+
+DECLARE_LOG_CATEGORY_EXTERN(LogCheckAppInstanceBPLibrary, Log, All);
 
 UCLASS()
 class UCheckAppInstanceBPLibrary : public UBlueprintFunctionLibrary
