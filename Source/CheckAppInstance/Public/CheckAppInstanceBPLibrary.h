@@ -9,7 +9,7 @@
 #include "Misc/CoreDelegates.h"
 #include "Misc/CommandLine.h"
 
-#if PLATFORM_UNIX
+#if PLATFORM_MAC || PLATFORM_LINUX
 #include <unistd.h>		// close
 #include <fcntl.h>		// open
 #include <sys/file.h>	// flock
